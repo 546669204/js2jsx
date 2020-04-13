@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`vue component custom-directive 1`] = `
+"var i = function () {
+  var e = this,
+      t = e.$createElement,
+      n = e._self._c || t;
+  return <div><div vDemo:foo_a.b=\\"message\\" id=\\"hook-arguments-example\\" /> <input vFocus /> <div id=\\"baseexample\\"><p>Scroll down the page</p> <p vPin=\\"200\\">Stick me 200px from the top of the page</p></div> <div id=\\"dynamicexample\\"><h3>Scroll down inside this section ↓</h3> <p vPin:[direction]=\\"200\\">I am pinned onto the page at 200px to the left.</p></div> <div vDemo=\\"{ color: 'white', text: 'hello!' }\\" /></div>;
+};"
+`;
+
+exports[`vue component dynamic-components 1`] = `
+"var o = function () {
+  var t = this.$createElement,
+      e = this._self._c || t;
+  return <div><keep-alive><component is={this.currentTabComponent} /></keep-alive> <component is={this.currentTabComponent} /></div>;
+};"
+`;
+
+exports[`vue component event 1`] = `
+"var o = function () {
+  var n = this,
+      e = n.$createElement,
+      t = n._self._c || e;
+  return <div id=\\"example-1\\"><button vOn:click=\\"n.counter += 1\\">Add 1</button> <p>The button above has been clicked {n.counter} times.</p> <button vOn:click=\\"n.greet\\">Greet</button> <button vOn:click=\\"n.say(\\\\\\"hi\\\\\\")\\">Say hi</button> <a vOn:click_stop=\\"n.doThis($event)\\" /> <form vOn:submit_prevent=\\"n.onSubmit($event)\\" /> <a vOn:click_stop_prevent=\\"n.doThat($event)\\" /> <form vOn:submit_prevent=\\"null\\" /> <div vOn:click_capture=\\"n.doThis($event)\\">...</div> <div vOn:click_self=\\"n.doThat($event)\\">...</div> <a vOn:click_once=\\"n.doThis($event)\\" /> <div vOn:scroll_passive=\\"n.onScroll($event)\\">...</div> <input vOn:keyup_enter=\\"n.submit($event)\\" /> <input vOn:keyup_page-down=\\"n.a ? n.onPageDown : n.onPageDown2;\\" /> <input vOn:keyup_13=\\"n.submit($event)\\" /> <input vOn:keyup_13_delete_shift=\\"n.submit($event)\\" /> <input vOn:keyup_13_delete_shift=\\"void (n.a ? n.b : n.counter += 1)\\" /> <div vOn:click_once=\\"n.doThis($event)\\">...</div> <div vNativeOn:click=\\"return n.onclick(n.$enevt);\\" /> <div vOn:click_stop=\\"n.onclick(n.$enevt)\\" /></div>;
+};"
+`;
+
+exports[`vue component slot 1`] = `
+"var r = function () {
+  var e = this,
+      t = e.$createElement,
+      n = e._self._c || t;
+  return <my-functional-component><template slot=\\"default\\" slot-scope=\\"slotProps\\">{slotProps.user.firstName} <div vIf={slotProps.user} /></template><template slot=\\"foo\\">first</template><template slot={e.dynamicSlotName}>...</template><template slot=\\"header\\"><h1>header1-h1</h1> <h2>header1-h2</h2></template><template slot=\\"header2\\">header2</template><slot name=\\"default\\" /> <slot name=\\"footer\\" user={e.user} /> <h1 slot=\\"header\\" slot=\\"header\\">旧插槽</h1>   <div staticClass=\\"demo-alert-box\\"><strong>Error!</strong> <slot name=\\"default\\" /></div>  <p>second</p>  <current-user slot=\\"ccc\\" slot-scope=\\"slotProps\\">{e._s(slotProps.user.firstName + slotProps.name + slotProps.user.d)}</current-user> <current-user slot=\\"default\\" slot-scope=\\"slotProps\\">{e._s(slotProps.user.firstName)}</current-user></my-functional-component>;
+};"
+`;
+
+exports[`vue component static 1`] = `
+"o = function () {
+  var e = this.$createElement;
+  return <div id=\\"id123\\" attr=\\"attr\\">静态组件渲染</div>;
+};"
+`;
+
+exports[`vue component syntax 1`] = `
+"var s = function () {
+  var t = this,
+      e = t.$createElement,
+      n = t._self._c || e;
+  return <div><span>Message: {t.msg}</span>  <span domPropsInnerHTML={t._s(t.rawHtml)} /> <div id={t.dynamicId} /> <button disabled={t.isButtonDisabled}>Button</button> <div id={\\"list-\\" + t.id} />n  {t.message.split(\\"\\").reverse().join(\\"\\")}n</div>;
+};"
+`;
+
+exports[`vue component v-if 1`] = `
+"var o = function () {
+  var e = this,
+      t = e.$createElement,
+      n = e._self._c || t;
+  return <div vIf={e.a}>n  123123n  <span vIf={e.c}>dsaqwe</span> <div><video vIf={e.b} src=\\"\\" /></div></div>;
+};"
+`;
+
+exports[`vue component v-model 1`] = `
+"var o = function () {
+  var e = this,
+      t = e.$createElement,
+      n = e._self._c || t;
+  return <div><input vModel=\\"c\\" domPropsValue={e.c} vOn:input=\\"e.c = $event.target.value\\" /></div>;
+};"
+`;
+
+exports[`vue component v-show 1`] = `
+"var o = function () {
+  var e = this.$createElement;
+  return <h1 vShow=\\"ok\\">Hello!</h1>;
+};"
+`;

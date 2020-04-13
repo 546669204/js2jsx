@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react component jsx 1`] = `
+"t.default = function () {
+  const e = <h1>Hello, Josh Perez</h1>;
+  return <div>{<button onClick={this.handleClick.bind(this)} disabled={this.state.disabled}>Add Item</button>}{this.state.if ? <div>123456</div> : null}{<ul>{this.state.items.map(function (e, t) {
+        return <li key={t}>{e}</li>;
+      })}</ul>}{e}</div>;
+};"
+`;
