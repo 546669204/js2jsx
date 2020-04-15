@@ -1,8 +1,11 @@
 {
   "name": "js2jsx",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "version": "1.0.1",
+  "main": "ts2js/index.js",
+  "author":"xiaoming",
+  "license":"Apache License 2.0",
+  "keywords": ["ast","react","vue","jsx"],
+  "repository": {"url": "https://github.com/546669204/js2jsx.git"},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",

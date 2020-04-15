@@ -15,7 +15,7 @@
 ## Install
 
 ```
-yarn add　https://github.com/546669204/js2jsx.git
+yarn add js2jsx
 ```
 
 ## Usage
