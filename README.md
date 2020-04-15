@@ -11,6 +11,8 @@
 
 同时学习了 react jsx 和 vue template 的编译规则
 
+在线转换地址(demo) https://js2jsx.xmings.com/
+
 
 ## Install
 
